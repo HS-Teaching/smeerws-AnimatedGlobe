@@ -1,18 +1,51 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TriggerAnimations : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private const string animParamRotateLeft = "isSetToRotateLeft";
+    private const string animParamRotateRight = "isSetToRotateRight";
+    private const string animParamRotateInactive = "isSetToInactive";
+
+    public Animator stateMachine;
+
+    void Start ()
     {
-        
+        SetAnimationParamInactive ();
     }
 
-    // Update is called once per frame
-    void Update()
+    void SetAnimationParamInactive ()
     {
-        
+        stateMachine.ResetTrigger (animParamRotateLeft);
+        stateMachine.ResetTrigger (animParamRotateRight);
+        stateMachine.SetTrigger (animParamRotateInactive);
+    }
+
+    void SetAnimatinParamRotationToLeft ()
+    {
+        stateMachine.SetTrigger (animParamRotateLeft);
+        stateMachine.ResetTrigger (animParamRotateRight);
+        stateMachine.ResetTrigger (animParamRotateInactive);
+    }
+
+    void SetAnimationParamRotationToRight ()
+    {
+        stateMachine.ResetTrigger (animParamRotateLeft);
+        stateMachine.SetTrigger (animParamRotateRight);
+        stateMachine.ResetTrigger (animParamRotateInactive);
+    }
+
+    public void RotateRight ()
+    {
+        SetAnimationParamRotationToRight ();
+    }
+
+    public void RotateLeft()
+    {
+        SetAnimatinParamRotationToLeft ();
+    }
+
+    public void RotateStop()
+    {
+        SetAnimationParamInactive ();
     }
 }
