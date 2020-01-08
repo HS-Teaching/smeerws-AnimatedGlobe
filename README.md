@@ -16,6 +16,10 @@ Standalone, Oculus Rift no reference resolution
 
 ### Visuals: 
 Screenshots (concept and experience), Video
+<div>
+<img src = "./Screenshots/scunity-branch-master.jpg" width = "500">
+<img src = "./Screenshots/scunity-branch-interactionButtons.jpg" width = "500">
+</div>
 
 ### Necessary setup/execution steps: 
 Installation process, e.g. step by step instructions that I can run the project after cloning it
