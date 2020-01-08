@@ -15,9 +15,13 @@ Scripting Runtime Version: 4.X;
 Standalone, Oculus Rift no reference resolution 
 
 ### Visuals: 
-Screenshots (concept and experience), Video
+branch master
 <div>
 <img src = "./Screenshots/scunity-branch-master.jpg" width = "500">
+</div>
+
+branch interactionButtons
+<div>
 <img src = "./Screenshots/scunity-branch-interactionButtons.jpg" width = "500">
 </div>
 
