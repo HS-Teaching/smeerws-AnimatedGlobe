@@ -41,10 +41,12 @@ Installation process, e.g. step by step instructions that I can run the project 
 * Git usage: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
 ### Project state: 
-incl. progress in percent
+100%
 
-### Limitations: 
+### Limitations: None
 
 ### Lessons Learned: 
+* Useing Animator, Animations in combination with C# scripts
+* Switching between branches
 
 Copyright by smeerws
